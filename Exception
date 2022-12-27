@@ -1,0 +1,25 @@
+package myproject;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Exception {
+
+	public class e extends java.lang.Exception {
+
+	}
+
+	public static void main(String[] args) {
+		try {
+	System.out.println("Welcome to max heart rate calculator:");
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter your age");
+	int age = sc.nextInt();
+	int maxheartrate = 200-age;
+	System.out.println("Max heart rate  :" + maxheartrate);
+	}
+		catch(InputMismatchException e) {
+		System.out.println("Please enter integer only:");
+	}
+
+}
+}
