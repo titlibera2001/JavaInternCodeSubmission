@@ -1,0 +1,40 @@
+package myproject;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+
+public class TryCatchFinallyTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter no 1:");
+		int a = sc.nextInt();
+		System.out.println("Enter no 2:");
+		int b = sc.nextInt();
+		int d = add (a,b);
+		System.out.println("the output is:" +d);
+		} catch(InputMismatchException e) {
+			System.out.println("please enter integers only");
+		}
+	}
+	
+
+	private static int  add(int a, int b) {
+		int c = 0;
+		// TODO Auto-generated method stub
+		try {
+			c = a+b;
+			
+		}catch(Exception e) {
+			System.out.println("Please enter integer only:");
+		}finally {
+			System.out.println("Finally executed:");
+			return c;
+			
+		}
+	}
+
+}
