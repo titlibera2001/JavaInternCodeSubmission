@@ -1,0 +1,29 @@
+package myproject;
+
+import java.util.ArrayDeque;
+import java.util.Iterator;
+
+public class StackusingDeque {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayDeque myDeque = new ArrayDeque<String>();
+		myDeque.add("Titli");
+		myDeque.addFirst("Bhavesh");
+		myDeque.addLast("Sinha");
+		myDeque.offerFirst("Salman");
+		myDeque.offer("Samir");
+		
+		System.out.println("First element:" + myDeque.getFirst());
+		System.out.println("Last element:" + myDeque.getLast());
+		System.out.println("Deque contains Bhavesh:"+ myDeque.contains("Bhavesh"));
+		
+		System.out.println("Iterating all elements in descending order:");
+		Iterator<String> myIterator= myDeque.descendingIterator();
+		while(myIterator.hasNext()) {
+			System.out.println(myIterator.next());
+		}
+			
+	}
+
+}
