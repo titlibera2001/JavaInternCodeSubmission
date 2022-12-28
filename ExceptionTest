@@ -1,8 +1,8 @@
-package myproject;
+package myProject;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Exception {
+public class ExceptionTest {
 
 	public class e extends java.lang.Exception {
 
