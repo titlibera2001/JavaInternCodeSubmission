@@ -1,9 +1,9 @@
-package myproject;
+package myProject;
 
 import java.util.ArrayDeque;
 import java.util.Iterator;
 
-public class StackusingDeque {
+public class StackUsingDeque {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
