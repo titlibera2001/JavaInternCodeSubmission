@@ -1,0 +1,20 @@
+package myProject;
+
+import java.util.ArrayList;
+
+public class ToArrayTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 ArrayList<String> PartyGuests = new ArrayList<String>();
+		 PartyGuests.add("Titli");
+		 PartyGuests.add("Salmali");
+		 PartyGuests.add("Kousiki");
+		 PartyGuests.add("Arusi");
+		 Object[] arrayGuests = PartyGuests.toArray();
+		  System.out.println("Element at Index 0 for Array:" + arrayGuests[0]);
+		  
+		  System.out.println("Hashcode of the array:" + arrayGuests.hashCode());
+		  }
+
+}
